@@ -1,6 +1,6 @@
 {
   "name": "obsidian-dotenv",
-  "version": "0.12.0",
+  "version": "0.1.0",
   "description": "Add custom variables editable via community plugins menu and accessible by other plugins such as templater & dataview.",
   "main": "main.js",
   "scripts": {
