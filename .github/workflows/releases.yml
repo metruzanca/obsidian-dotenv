@@ -21,7 +21,7 @@ jobs:
       with:
         # TODO Idk if this works, might need to list all files individually
         artifacts: "build/*"
-        bodyFile: "body.md"
+        # bodyFile: "body.md"
         token: ${{ secrets.GITHUB_TOKEN }}
 
 # Create a tag (don't include v in semver or obsidian won't play nice)
