@@ -6,7 +6,50 @@ Dotenv allows you to add variables to `app.env` e.g. `app.env.customVariable`.
 
 This is useful if you want to distribute customizable templater tamplates without needing the user to dive into their code and instead easily customize them via dotenv.
 
-TODO:
+
+## Usage
+
+> Atm, theres no way to add variables via the settings (this will come as I learn the obsidian plugin api better) and must instead be done manually via the data.json file.
+
+Variables present in data.json will be represented in the settings menu. Changing them here will update them in `app.env`
+
+![](./assets/settings-example.png)
+
+Variables without a group in `data.json` are saved under the `unnamed` group but don't have this group in `app.env`.
+
+```json
+{
+  "badName": {
+    "var 21": "value 21"
+  },
+  "var 11": "dwadwadwawadad"
+}
+```
+
+An example of `data.json`
+```json
+{
+  "env": {
+    "unnamed": {
+      "var 11": {
+        "description": "description 11",
+        "value": "dwadwadwawadad"
+      }
+    },
+    "badName": {
+      "var 21": {
+        "description": "description 21",
+        "value": "value 21"
+      }
+    }
+  }
+}
+```
+
+> Variables are nested under `env` in case this plugin ever gets more settings.
+
+## TODO
+
 - [ ] Add ability to add multiple vars to app.env
 - [ ] Env groups.
   - [ ] Detele entire env groups
