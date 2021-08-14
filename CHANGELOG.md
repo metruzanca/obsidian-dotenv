@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+---
+## [0.1.1] - 2021-08-13
+### Added 
+- MIT License
+- Meta: Added some better Release automation
+### Changed
+- Changed the docs to be a bit simpler and added a use case example
+
+---
 ## [0.1.0] - 2021-08-13
 ### Added
 - Variables are exposed at `app.env`
