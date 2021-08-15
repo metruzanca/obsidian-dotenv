@@ -1,4 +1,12 @@
-## Obsidian Dotenv
+<p align="center">
+  <a href="#">
+    <img alt="repository logo" src="assets/dotenv.png" width="120" />
+  </a>
+</p>
+<h1 align="center">
+  Obsidian Dotenv
+</h1>
+
 
 Easily manage custom variables accessible by other plugins e.g. templater (and it's templates). Useless on its own, this plugin was design to be used with other plugins such as templater and dataview.
 

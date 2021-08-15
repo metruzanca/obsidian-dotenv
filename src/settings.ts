@@ -25,6 +25,18 @@ export class SampleSettingTab extends PluginSettingTab {
 		return s
 	}
 
+	coffe() {
+		let {containerEl} = this;
+		const div = containerEl.createDiv("coffee");
+		div.createEl("a", {
+				href: "https://www.buymeacoffee.com/samuelezanca"
+		}).createEl("img", {
+				attr: {
+						src: "https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=valentine195&button_colour=e3e7ef&font_colour=262626&font_family=Inter&outline_colour=262626&coffee_colour=ff0000"
+				}
+		});
+	}
+
 	display(): void {
 		let {containerEl} = this;
 
@@ -47,5 +59,7 @@ export class SampleSettingTab extends PluginSettingTab {
 				this.createSetting(containerEl, key, envVar, groupKey)
 			}
 		}
+
+		this.coffe()
 	}
 }
