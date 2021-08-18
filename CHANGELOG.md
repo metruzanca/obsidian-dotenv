@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Logo inspired by [dotenv](https://github.com/motdotla/dotenv)'s logo with Obsidian's purple.
+### Changed
+- Moved release.ts to its own repository and installed via gh-tagger npm package.
 ---
 ## [0.1.1] - 2021-08-13
 ### Added 
